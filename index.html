@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JobTracker – Land Your Dream Job</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;600;700&family=Satoshi:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="landing-body">
+    <nav class="landing-nav">
+        <div class="nav-logo"><i class="fa-solid fa-briefcase"></i> JobTracker</div>
+        <div class="nav-links">
+            <a href="/login" class="btn-outline">Log In</a>
+            <a href="/register" class="btn-primary">Get Started</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-badge"><i class="fa-solid fa-bolt"></i> Smart Job Tracking</span>
+            <h1>Track Every Application.<br><span class="accent">Land Your Dream Job.</span></h1>
+            <p>Stop losing track of job applications. Manage everything in one powerful dashboard — from first click to offer letter.</p>
+            <div class="hero-cta">
+                <a href="/register" class="btn-primary btn-lg">Start Tracking Free</a>
+                <a href="/login" class="btn-ghost btn-lg">Sign In <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span>500+</span> Jobs Tracked</div>
+                <div class="stat-div"></div>
+                <div class="stat"><span>6</span> Status Stages</div>
+                <div class="stat-div"></div>
+                <div class="stat"><span>100%</span> Free</div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&q=80" alt="Job Tracking Dashboard">
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Everything You Need to <span class="accent">Stay Organized</span></h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <h3>Live Dashboard</h3>
+                <p>See your application pipeline at a glance with real-time statistics and status breakdowns.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-filter"></i></div>
+                <h3>Smart Filters</h3>
+                <p>Search by company, role, or status instantly. Find any application in seconds.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Secure & Private</h3>
+                <p>Your data is encrypted and belongs only to you. No sharing, no ads.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-pen-to-square"></i></div>
+                <h3>Full CRUD Control</h3>
+                <p>Add, edit, and delete applications with all the details that matter most.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="landing-footer">
+        <p>© 2025 JobTracker. Built with ❤️ for job seekers.</p>
+    </footer>
+</body>
+</html>

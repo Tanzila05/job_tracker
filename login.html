@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login – JobTracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;600;700&family=Satoshi:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="auth-body">
+    <div class="auth-container">
+        <div class="auth-image">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&q=80" alt="Professional">
+            <div class="auth-image-overlay">
+                <div class="auth-logo"><i class="fa-solid fa-briefcase"></i> JobTracker</div>
+                <p>"The secret to getting ahead is getting started."</p>
+            </div>
+        </div>
+        <div class="auth-form-section">
+            <div class="auth-form-wrapper">
+                <h2>Welcome Back</h2>
+                <p class="auth-subtitle">Log in to continue tracking your journey</p>
+
+                {% if error %}
+                <div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> {{ error }}</div>
+                {% endif %}
+
+                <form method="POST" action="/login">
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <div class="input-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <div class="input-icon">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" name="password" placeholder="••••••••" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Log In <i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <p class="auth-switch">Don't have an account? <a href="/register">Register here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
